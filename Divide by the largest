@@ -1,0 +1,10 @@
+x = int(input())
+stick = []
+
+for i in range(x):
+    flot = float(input())
+    stick.append(flot)
+    chota = stick[0]
+for i in range(x):
+    value = stick[i]/max(stick)
+    print('{:.2f}'.format(value))
