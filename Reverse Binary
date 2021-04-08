@@ -1,0 +1,11 @@
+"""
+ A program that takes in a positive integer as input, and outputs a string of 1's and 0's representing the integer in reverse binary.
+"""
+
+x = int(input())
+binary = ""
+while x > 0:
+    remain = (x % 2)
+    binary = binary + str(remain)
+    x = x // 2
+print(binary)
