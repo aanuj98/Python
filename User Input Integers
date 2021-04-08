@@ -1,0 +1,12 @@
+num = int(input())
+num_list = []
+for n in range (num):
+    new_num = int(input())
+    num_list.append(new_num)
+senti = int(input())
+new_list = []
+for n in range (len(num_list)):
+    if num_list[n] <= senti:
+        new_list.append(num_list[n])
+for n in range (len(new_list)):
+    print("{},".format(new_list[n]), end="")
