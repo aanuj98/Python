@@ -1,0 +1,8 @@
+lst = []
+x = int()
+while x >= 0:
+    x = int(input())
+    lst.append(x)
+bara = max(lst)
+chota = min([i for i in lst if i >= 0])
+print('{} and {}'.format(chota, bara))
