@@ -1,0 +1,27 @@
+'''
+Ask for price for 4 items
+add them and display the total
+display the amount of sales tax and total
+sales tax is 8 percent = 0.08
+'''
+
+# Ask for price for each item
+item1 = int(input("Enter the price for the first item "))
+item2 = int(input("Enter the price for the second item "))
+item3 = int(input("Enter the price for the third item "))
+item4 = int(input("Enter the price for the fourth  item "))
+print('The cost for first item is:', item1)
+print('The cost for second item is:', item2)
+print('The cost for third item is:', item3)
+print('The cost for fourth item is:', item4)
+
+# Display the total
+total = item1 + item2 + item3 + item4
+print('The total cost is:', total)
+
+# Calculate the tax
+tax = total * 0.08
+
+# Show the total
+grand_total = tax + total
+print("The total after taxes is:", grand_total)
