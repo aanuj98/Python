@@ -1,0 +1,29 @@
+""""
+Enter desired auto service:
+Oil change
+You entered: Oil change
+cost of oil change: 35$
+Oil change -- $35
+Tire rotation -- $19
+Car wash -- $7
+"""
+
+service_choice = input("Enter desired auto service:")
+print("You entered:", service_choice)
+
+service_cost = 0
+
+if service_choice == 'Oil change':
+    service_cost = 35
+    print("Cost of oil change: ${}".format(service_cost))
+
+elif service_choice == 'Tire rotation':
+    service_cost = 19
+    print("Cost of tire rotation: ${}".format(service_cost))
+
+elif service_choice == 'car wash':
+    service_cost = 7
+    print("Cost of car wash: ${}".format(service_cost))
+
+else:
+    print("Error: Requested service is not recognized")
