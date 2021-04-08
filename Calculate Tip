@@ -1,0 +1,27 @@
+"""
+Aanuj Sharma
+Pseudocode
+1. Get the price for food
+2. Calculate the tip for 18%
+3. Calculate the tax
+4. Add everything
+5. Display the result
+"""
+
+# Get the charge for food and print
+charge_food = float(input("Enter the charge for your food"))
+print ('The charge for food is:', charge_food)
+
+# Calculate the tip and print
+tip = charge_food * 0.18
+print('The tip is:', tip)
+
+# Calculate the tax and print
+sales_tax = charge_food * 0.07
+print('The sales tax is:', sales_tax)
+
+#Add Everything
+total_amount = charge_food + tip + sales_tax
+
+#Display the results
+print('The total cost is:', total_amount)
