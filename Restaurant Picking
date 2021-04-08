@@ -1,0 +1,36 @@
+
+
+"""
+
+ALGORITHM
+Get if the user is vegetarian
+Get if the user is vegan
+Get if the user is gluten free
+Compare if answer matches the yes
+if answer "yes" then pick the restaurant suitable for their needs
+display the restaurant they can go to
+
+"""
+# get user input about their dietary restrictions
+vegetarian = (input("Is anyone in your party a vegetarian? "))
+
+vegan = (input("Is anyone in your party a vegan? "))
+
+gluten_free = (input("Is anyone in your party gluten-free? "))
+
+# compare the answers to the restaurant
+if vegetarian == 'yes':
+    restaurant = ["Jefferson Street Pizza Company","Day Cafe","Sister's Fine Italian","The Chef's Kitchen"]
+if vegan == 'yes' and gluten_free == 'yes':
+    restaurant = ["Day Cafe","The Chef's Kitchen"]
+elif vegan == 'yes' and gluten_free == 'no':
+    restaurant = ["Day Cafe","The Chef's Kitchen"]
+elif vegan == 'no' and gluten_free == 'yes':
+    restaurant = ["Jefferson Street Pizza Company","Day Cafe","The Chef's Kitchen"]
+elif vegan == 'no' and gluten_free == 'no':
+    restaurant = ["Sister's Fine Italian","Jefferson Street Pizza Company"]
+else:
+    restaurant = ["Asad's Burgers"]
+
+# display the results
+print("Your restaurant options are:\n","\n".join(restaurant))
